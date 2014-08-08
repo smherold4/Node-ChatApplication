@@ -1,0 +1,13 @@
+{
+  "name": "my_chat_app",
+  "version": "0.0.0",
+  "description": "George Ashworth and Michael Herold's Node.js chat app",
+  "main": "index.js",
+  "author": "George Ashworth Michael Herold",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io" : "1.x",
+    "mime" : "~1.2.7",
+    "node-static" : ""
+  }
+}

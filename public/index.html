@@ -1,0 +1,41 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.0.6.js"></script>
+  <script src="javascripts/chat.js"></script>
+  <script src="javascripts/chat_ui.js"></script>
+  <title>My Chat App</title>
+</head>
+<body>
+  <div class='container'>
+    <div class='chatdiv'>
+      <h3>Chat Window</h3>
+      <ul id="messages">
+      </ul>
+    </div>
+    
+    <div class='formdiv'>
+      <form id='message_form'>
+        <label>Type your message here:
+          <br>
+          <input id='message_input' type="text">
+        </label>
+        <button id='send'>Submit</button>
+      </form>
+    </div>
+    
+    <div class="user_list">
+      <h3>User List</h3>
+      <ul id="user_list">
+      </ul>
+    </div>
+    
+    <div class='room_list'>
+      <h3>Room List</h3>
+      <ul id='room_list'>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
