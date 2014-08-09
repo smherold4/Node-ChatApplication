@@ -11,6 +11,7 @@ $(function () {
   chatMember.socket.on('updateRoomList',displayLists)
   chatMember.socket.on('stayedIn', dispStayed)
   chatMember.socket.on('updateUserList', displayUsers)
+  chatMember.socket.on('changeRoomTitle', changeTitle)
   
   
   $('#message_form').on('submit', function(event) {
@@ -139,6 +140,13 @@ function displayUsers(data) {
     $li.text(memberHash[id]);
     $('#user_list').append($li);
   }
+    
+}
+
+
+function changeTitle(data) {
+  var title = data.room
+  $("#chat_h").text(title)
     
 }
 
