@@ -10,6 +10,7 @@ $(function () {
   chatMember.socket.on('showTheLists', displayLists)
   chatMember.socket.on('updateAllLists',displayLists)
   chatMember.socket.on('stayedIn', dispStayed)
+  chatMember.socket.on('updateUserList', displayUsers)
   
   
   $('#message_form').on('submit', function(event) {
@@ -111,7 +112,26 @@ function displayLists(data) {
     $('#room_list').append($li);
     
   })
+  
+  var membersHash = data.users;
+   $('#user_list').text('');
+  for (var userId in membersHash) {
+    $li = $('<li>');
+    $li.text(membersHash[userId]);
+    $('#user_list').append($li);
+  }
 
+}
+
+function displayUsers(data) {
+  var memberHash = data.roomMemberData[data.room];
+  $('#user_list').text('');
+  for(var id in memberHash) {
+    $li = $('<li>');
+    $li.text(memberHash[id]);
+    $('#user_list').append($li);
+  }
+    
 }
 
 
