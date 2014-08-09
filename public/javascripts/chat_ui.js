@@ -14,14 +14,16 @@ $(function () {
   $('#message_form').on('submit', function(event) {
     event.preventDefault();
     var input = getInput();
-    if (input[0] === ".") {
+    if (input[0] === "#") {
       console.log("name change")
       input = input.slice(1)
       chatMember.changeNick(input);
+    } else if (input === "clear" || input === "Clear") {
+      $("#messages").html('')
     } else if (input === "where" || input === "Where") {
       chatMember.triggerRoomDisplay();
       
-    } else if (input[0] === "$") {
+    } else if (input[0] === "@") {
       input = input.slice(1)
       chatMember.changeRoom(input)
     

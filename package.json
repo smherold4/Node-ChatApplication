@@ -1,9 +1,9 @@
 {
   "name": "my_chat_app",
   "version": "0.0.0",
-  "description": "George Ashworth and Michael Herold's Node.js chat app",
+  "description": "Node.js Multi Room Chat App",
   "main": "index.js",
-  "author": "George Ashworth Michael Herold",
+  "author": "Michael Herold",
   "license": "MIT",
   "dependencies": {
     "socket.io" : "1.x",
