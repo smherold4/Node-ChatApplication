@@ -8,19 +8,25 @@
   <title>My Chat App</title>
 </head>
 <body>
-  <div class='container'>
-    
-
+ 
     
   <div class="col-left">  
     
     
-    <h2>Multi-room Chat Built on Node.js Sockets</h2>
+    <center><h2>Multi-room Chat Built on Node.js Sockets</h2></center>
         <div class='chatdiv'>
           <h3>Chat Window</h3>
           <ul id="messages">
           </ul>
         </div>
+        
+        <div class='room_list'>
+          <h3>Existing Rooms</h3>
+          <ul id='room_list'>
+          </ul>
+        </div>
+        
+        
     
         
   </div> <!-- ends 1st col-left -->
@@ -41,7 +47,7 @@
     
         <div class='formdiv'>
           <form id='message_form'>
-            <label>Type your message here:
+            <label><b>Type your messages or commands here:</b>
               <br>
               <input id='message_input' type="text">
             </label>
@@ -49,23 +55,23 @@
           </form>
         </div>
     
+        
         <div class="user_list">
-          <h3>User List</h3>
+          <h3>Users In This Room</h3>
           <ul id="user_list">
           </ul>
         </div>
+        
     
-        <div class='room_list'>
-          <h3>Existing Rooms</h3>
-          <ul id='room_list'>
-          </ul>
-        </div>
+        
+    
+       
    
       
     </div> <!-- end 2nd col-rigth -->
   
   
 
-  </div> <!-- ends container -->
+
 </body>
 </html>

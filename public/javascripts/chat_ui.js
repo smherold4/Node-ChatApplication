@@ -9,6 +9,7 @@ $(function () {
   chatMember.socket.on('showRoom', dispRoom)
   chatMember.socket.on('showTheLists', displayLists)
   chatMember.socket.on('updateAllLists',displayLists)
+  chatMember.socket.on('stayedIn', dispStayed)
   
   
   $('#message_form').on('submit', function(event) {
@@ -55,6 +56,7 @@ function displayNick(data) {
 }
 
 function hearWelcome(data) {
+  $('#messages').html('')
   $li = $('<li>');
   $li.text('Welcome, ' + data.nickname + ' to ' + data.room);
   $('#messages').append($li);
@@ -67,11 +69,15 @@ function displayGoodbye(data) {
 }
 
 function displayMove(data) {
+  console.log(data.room);
+  console.log(data.newness)
+  $('#messages').html('')
   $li = $('<li>');
+  
   if (data.newness) {
-    $(li).text("You moved into a new room called " + data.room)
+    $li.text("You created a new room called " + data.room)
   } else {
-    $(li).text("You moved into the an existing room called " + data.room)
+    $li.text("You moved into an existing room called " + data.room)
   }
   $('#messages').append($li);
   
@@ -86,9 +92,19 @@ function dispRoom(data) {
  
 }
 
+
+function dispStayed(data) {
+
+  $li = $('<li>');
+  $li.text("You remain in " + data.room);
+  $('#messages').append($li);
+ 
+}
+
+
 function displayLists(data) {
   var roomsArr = data.rooms;
-  $('#room_list').html('')
+  $('#room_list').text('')
   roomsArr.forEach (function (rm) {
     $li = $('<li>');
     $li.text(rm);

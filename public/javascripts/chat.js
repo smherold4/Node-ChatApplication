@@ -23,9 +23,9 @@
     this.socket.emit('nicknameChangeRequest', { nickname: nickname });
   };//sends event to the server called nicknameChangeRequest with the data hash shown
   
-  Chat.prototype.changeRoom = function (userInput) {
+  Chat.prototype.changeRoom = function (roomChoice) {
     this.socket.emit('roomChangeRequest', {
-      room : userInput,
+      room : roomChoice,
     }) 
   }
   

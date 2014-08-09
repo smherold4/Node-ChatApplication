@@ -1,6 +1,4 @@
-.container {
-  width: 1200px;
-}
+
 
 body * {
 /*  border: thin solid blue;*/
@@ -10,11 +8,12 @@ body * {
 .formdiv {
 
   text-align: left;
+  
   width: 400px;
   padding: 30px;
-  border: 5px solid blue;
+  border: 5px solid darkgreen;
   border-radius: 10px;
-  background: aliceblue;
+  background: #829460;
 }
 
 #messages {
@@ -28,12 +27,12 @@ body * {
 }
 .chatdiv {
 
-  vertical-align: top;
+    
   width: 500px;
   padding: 30px;
-  border: 5px solid hotpink;
+  border: 5px solid black;
   border-radius: 10px;
-  background: pink;
+  background: lightgrey;
 }
 
 .user_list {
@@ -50,7 +49,7 @@ body * {
 .room_list {
 
 
-  width: 400px;
+  width: 500px;
   padding: 30px;
   border: 5px solid blue;
   border-radius: 10px;
@@ -64,7 +63,7 @@ body * {
   padding: 30px;
   border: 5px solid black;
   border-radius: 10px;
-  background: lightgrey;
+  background: cornflowerblue;
   
   
   
@@ -73,15 +72,25 @@ body * {
 
 
 .col-left {
+  vertical-align: top;
   display: inline-block;
+  margin-left: 5%;
  
   
   
 }
 
 .col-right {
+  margin-top: 5.3%;
   display: inline-block;
   margin-left: 5px;
+  
+  
+}
+
+form input {
+  width: 300px;
+  
   
   
 }
