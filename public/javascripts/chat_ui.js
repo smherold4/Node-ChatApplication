@@ -7,7 +7,8 @@ $(function () {
   chatMember.socket.on('soLong', displayGoodbye);
   chatMember.socket.on('roomChanged', displayMove)
   chatMember.socket.on('showRoom', dispRoom)
-  
+  chatMember.socket.on('showTheLists', displayLists)
+  chatMember.socket.on('updateAllLists',displayLists)
   
   
   $('#message_form').on('submit', function(event) {
@@ -65,7 +66,11 @@ function displayGoodbye(data) {
 
 function displayMove(data) {
   $li = $('<li>');
-  $li.text(data.message);
+  if (data.newness) {
+    $(li).text("You moved into a new room called " + data.room)
+  } else {
+    $(li).text("You moved into the an existing room called " + data.room)
+  }
   $('#messages').append($li);
   
   
@@ -79,13 +84,16 @@ function dispRoom(data) {
  
 }
 
-Object.prototype.getVals = function () {
-  var vals = [];
-  for (key in this) {
-    if this.hasOwnProperty(key) {
-      vals.push(this[key]);
-    }  
-  }
-  return vals;
-  
+function displayLists(data) {
+  var roomsArr = data.rooms;
+  $('#room_list').html('')
+  roomsArr.forEach (function (rm) {
+    $li = $('<li>');
+    $li.text(rm);
+    $('#room_list').append($li);
+    
+  })
+
 }
+
+
