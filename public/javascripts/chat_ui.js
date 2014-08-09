@@ -8,7 +8,7 @@ $(function () {
   chatMember.socket.on('roomChanged', displayMove)
   chatMember.socket.on('showRoom', dispRoom)
   chatMember.socket.on('showTheLists', displayLists)
-  chatMember.socket.on('updateAllLists',displayLists)
+  chatMember.socket.on('updateRoomList',displayLists)
   chatMember.socket.on('stayedIn', dispStayed)
   chatMember.socket.on('updateUserList', displayUsers)
   
@@ -113,12 +113,20 @@ function displayLists(data) {
     
   })
   
-  var membersHash = data.users;
-   $('#user_list').text('');
-  for (var userId in membersHash) {
+  if (data.users) {
+    var membersHash = data.users;
+     $('#user_list').text('');
+    for (var userId in membersHash) {
+      $li = $('<li>');
+      $li.text(membersHash[userId]);
+      $('#user_list').append($li);
+    }
+  }
+  
+  if (data.vacated) {
     $li = $('<li>');
-    $li.text(membersHash[userId]);
-    $('#user_list').append($li);
+    $li.text("Note: The room called " + data.vacated + " has been vacated and removed.") 
+    $('#messages').append($li);
   }
 
 }
