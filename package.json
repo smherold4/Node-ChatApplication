@@ -6,8 +6,8 @@
   "author": "Michael Herold",
   "license": "MIT",
   "dependencies": {
-    "socket.io" : "1.x",
-    "mime" : "~1.2.7",
-    "node-static" : ""
+    "mime": "~1.2.7",
+    "node-static": "",
+    "socket.io": "^1.0.6"
   }
 }
