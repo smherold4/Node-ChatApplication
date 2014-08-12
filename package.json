@@ -10,6 +10,12 @@
     "logfmt": "^1.1.2",
     "mime": "~1.2.7",
     "node-static": "",
-    "socket.io": "^1.0.6"
+    "socket.io": "^1.0.6",
+    "ejs": "~0.7.1"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
+  
 }
+
