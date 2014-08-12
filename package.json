@@ -6,6 +6,8 @@
   "author": "Michael Herold",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.8.3",
+    "logfmt": "^1.1.2",
     "mime": "~1.2.7",
     "node-static": "",
     "socket.io": "^1.0.6"
