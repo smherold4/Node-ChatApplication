@@ -1,7 +1,7 @@
 
 
-body * {
-/*  border: thin solid blue;*/
+body {
+background: aliceblue;
   
 }
 
@@ -11,17 +11,17 @@ body * {
   
   width: 300px;
   padding: 30px;
-  border: 5px solid darkgreen;
+
   border-radius: 1px;
   background: #829460;
-  margin-bottom: 9px;
+  margin-bottom: 19px;
 }
 
 #messages {
  
 
   overflow: auto;
-  height: 300px;
+  height: 340px;
   width: 360px;
   border: 2px solid black;
   background: white;
@@ -31,8 +31,10 @@ body * {
     
   width: 400px;
   padding: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   border: 5px solid black;
-  border-radius: 1px;
+  border-radius: 5px;
   background: lightgrey;
 }
 
@@ -42,9 +44,8 @@ body * {
 
   width: 300px;
   padding: 30px;
-  border: 5px solid blue;
-  border-radius: 1px;
-  background: aliceblue;
+  border-radius: 30px;
+  background: lightyellow;
 }
 
 .room_list {
@@ -52,9 +53,9 @@ body * {
 
   width: 300px;
   padding: 30px;
-  border: 5px solid blue;
-  border-radius: 1px;
-  background: aliceblue;
+
+  border-radius: 20px;
+  background: lightyellow;
 }
 
 .command_list {
@@ -62,7 +63,7 @@ body * {
 
   width: 300px;
   padding: 30px;
-  border: 5px solid black;
+
   border-radius: 1px;
   background: cornflowerblue;
   
@@ -82,6 +83,9 @@ body * {
 }
 
 .col-righter {
+
+  padding: 10px;
+  background: aliceblue;
  vertical-align: top;
   display: inline-block;
   margin-left: 5px;
@@ -105,7 +109,7 @@ form input {
 }
 
 #chat_h {
-
-  
+  font-family: Sans-serif;
+  color: blue;
   
 }
