@@ -8,23 +8,21 @@
   <title>My Chat App</title>
 </head>
 <body>
- 
+ <div style="margin-right: 20%; margin-left: 22%">
+  <h2>Multi-room Chat Built on Node.js Sockets</h2>
+</div>
     
   <div class="col-left">  
     
     
-    <center><h2>Multi-room Chat Built on Node.js Sockets</h2></center>
+   
         <div class='chatdiv'>
          <i><h2 id="chat_h">lobby</h2></i>
           <ul id="messages">
           </ul>
         </div>
-        
-        <div class='room_list'>
-          <h3>Existing Rooms</h3>
-          <ul id='room_list'>
-          </ul>
-        </div>
+
+    
         
         
     
@@ -44,7 +42,7 @@
           </ul>
         </div>
     
-    
+        <br>
         <div class='formdiv'>
           <form id='message_form'>
             <label><b>Type your messages or commands here:</b>
@@ -54,22 +52,28 @@
             <button id='send'>Submit</button>
           </form>
         </div>
+
+       <center> <img src="images/node.jpeg"> </center>
     
-        
-        <div class="user_list">
-          <h3>Users In This Room</h3>
-          <ul id="user_list">
-          </ul>
-        </div>
-        
-    
-        
-    
-       
-   
-      
+
+
     </div> <!-- end 2nd col-rigth -->
-  
+
+    <div class="col-righter">
+      <h4> Who is Chatting and in What Room?</h4>
+      <div class="user_list" style="vertical-align: bottom;">
+        <h3>Users In This Room</h3>
+        <ul id="user_list">
+        </ul>
+      </div>
+      <br>
+      <div class='room_list' style="margin-top: 12px">
+        <h3>Existing Rooms</h3>
+        <ul id='room_list'>
+        </ul>
+      </div>
+      
+    </div>
   
 
 

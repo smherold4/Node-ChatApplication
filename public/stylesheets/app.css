@@ -12,8 +12,9 @@ body * {
   width: 300px;
   padding: 30px;
   border: 5px solid darkgreen;
-  border-radius: 10px;
+  border-radius: 1px;
   background: #829460;
+  margin-bottom: 9px;
 }
 
 #messages {
@@ -31,7 +32,7 @@ body * {
   width: 400px;
   padding: 30px;
   border: 5px solid black;
-  border-radius: 10px;
+  border-radius: 1px;
   background: lightgrey;
 }
 
@@ -42,17 +43,17 @@ body * {
   width: 300px;
   padding: 30px;
   border: 5px solid blue;
-  border-radius: 10px;
+  border-radius: 1px;
   background: aliceblue;
 }
 
 .room_list {
 
 
-  width: 400px;
+  width: 300px;
   padding: 30px;
   border: 5px solid blue;
-  border-radius: 10px;
+  border-radius: 1px;
   background: aliceblue;
 }
 
@@ -62,7 +63,7 @@ body * {
   width: 300px;
   padding: 30px;
   border: 5px solid black;
-  border-radius: 10px;
+  border-radius: 1px;
   background: cornflowerblue;
   
   
@@ -80,8 +81,16 @@ body * {
   
 }
 
+.col-righter {
+ vertical-align: top;
+  display: inline-block;
+  margin-left: 5px;
+  
+  
+}
+
 .col-right {
-  margin-top: 5.3%;
+vertical-align: top;
   display: inline-block;
   margin-left: 5px;
   
