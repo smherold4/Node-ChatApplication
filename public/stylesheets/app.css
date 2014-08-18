@@ -23,9 +23,30 @@ background: aliceblue;
   overflow: auto;
   height: 340px;
   width: 360px;
-  border: 2px solid black;
-  background: white;
+  border: 1px solid black;
+
+  /* IE10 Consumer Preview */ 
+  background-image: -ms-radial-gradient(center, circle farthest-corner, #A1D1AE 0%, #FFFFFF 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-radial-gradient(center, circle farthest-corner, #A1D1AE 0%, #FFFFFF 100%);
+
+  /* Opera */ 
+  background-image: -o-radial-gradient(center, circle farthest-corner, #A1D1AE 0%, #FFFFFF 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(radial, center center, 0, center center, 538, color-stop(0, #A1D1AE), color-stop(1, #FFFFFF));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-radial-gradient(center, circle farthest-corner, #A1D1AE 0%, #FFFFFF 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: radial-gradient(circle farthest-corner at center, #A1D1AE 0%, #FFFFFF 100%);
+  
+  
+  
 }
+
 .chatdiv {
 
     
@@ -35,7 +56,7 @@ background: aliceblue;
   padding-bottom: 4px;
   border: 5px solid black;
   border-radius: 5px;
-  background: lightgrey;
+  background: darkblue;
 }
 
 .user_list {
@@ -44,7 +65,7 @@ background: aliceblue;
 
   width: 300px;
   padding: 30px;
-  border-radius: 30px;
+  border-radius: 11px;
   background: lightyellow;
 }
 
@@ -54,7 +75,7 @@ background: aliceblue;
   width: 300px;
   padding: 30px;
 
-  border-radius: 20px;
+  border-radius: 11px;
   background: lightyellow;
 }
 
@@ -110,6 +131,6 @@ form input {
 
 #chat_h {
   font-family: Sans-serif;
-  color: blue;
+  color: aliceblue;
   
 }
