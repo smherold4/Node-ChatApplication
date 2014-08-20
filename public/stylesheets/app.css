@@ -63,7 +63,7 @@ background: aliceblue;
 
 
 
-  width: 300px;
+  width: 200px;
   padding: 30px;
   border-radius: 11px;
   background: lightyellow;
@@ -72,7 +72,7 @@ background: aliceblue;
 .room_list {
 
 
-  width: 300px;
+  width: 200px;
   padding: 30px;
 
   border-radius: 11px;
@@ -97,7 +97,7 @@ background: aliceblue;
 .col-left {
   vertical-align: top;
   display: inline-block;
-  margin-left: 5%;
+  margin-left: 2%;
  
   
   
