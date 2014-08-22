@@ -24,6 +24,7 @@ background: aliceblue;
   height: 340px;
   width: 360px;
   border: 1px solid black;
+  list-style-type: none;
 
   /* IE10 Consumer Preview */ 
   background-image: -ms-radial-gradient(center, circle farthest-corner, #A1D1AE 0%, #FFFFFF 100%);
