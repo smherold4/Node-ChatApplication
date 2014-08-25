@@ -2,7 +2,13 @@
 
 body {
 background: aliceblue;
-overflow: hidden;
+
+  
+}
+
+#wrapper {
+  overflow: hidden;
+  min-width:1202px;
   
 }
 
