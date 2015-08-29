@@ -6,16 +6,25 @@
   "author": "Michael Herold",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.8.3",
     "logfmt": "^1.1.2",
     "mime": "~1.2.7",
     "node-static": "",
-    "socket.io": "^1.0.6",
-    "ejs": "~0.7.1"
+    "socket.io": "^1.0.6"
   },
   "engines": {
     "node": "0.10.x"
-  }
-  
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./lib/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/smherold4/Node-ChatApplication.git"
+  },
+  "bugs": {
+    "url": "https://github.com/smherold4/Node-ChatApplication/issues"
+  },
+  "homepage": "https://github.com/smherold4/Node-ChatApplication"
 }
-
